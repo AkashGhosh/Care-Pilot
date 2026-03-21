@@ -508,66 +508,6 @@
         </p>
       </div>
     </div>
-
-    <!-- 4-stage pipeline -->
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-4 has-text-centered" style="margin-bottom:1.5rem;">4-Stage Annotation Pipeline</h3>
-        <div class="pipeline-steps">
-
-          <div class="pipeline-step reveal">
-            <div class="step-badge">1</div>
-            <div class="step-content">
-              <h4>Crafting Seed Tasks</h4>
-              <p>
-                The team worked closely with domain experts (clinicians and software users) through structured workshops to map
-                each platform's real-world usage patterns, functional scope, and operational constraints. This yielded a seed
-                inventory of executable, end-to-end tasks representative of authentic clinical practice — e.g., opening a DICOM
-                study, configuring MPR views, drawing a polygonal ROI, and exporting a measurement report in 3D Slicer.
-              </p>
-            </div>
-          </div>
-
-          <div class="pipeline-step reveal">
-            <div class="step-badge">2</div>
-            <div class="step-content">
-              <h4>Expanding Diversity and Scale</h4>
-              <p>
-                Each seed task was systematically varied: controlled substitutions (e.g., "MRI report" → "X-ray report"),
-                parameter adjustments (different filenames, thresholds, patient IDs), and procedural edits (adding or omitting
-                optional zoom or configuration steps) — all while preserving the original intent and executability of the workflow.
-              </p>
-            </div>
-          </div>
-
-          <div class="pipeline-step reveal">
-            <div class="step-badge">3</div>
-            <div class="step-content">
-              <h4>Stepwise GUI Annotation</h4>
-              <p>
-                Two trained annotators decomposed each task into a clear sequence of atomic steps. At every step, they captured
-                the corresponding application screenshot and labeled the precise next semantic action needed to progress within
-                the interface — producing fully grounded screenshot–action pairs for every step of every workflow.
-              </p>
-            </div>
-          </div>
-
-          <div class="pipeline-step reveal">
-            <div class="step-badge">4</div>
-            <div class="step-content">
-              <h4>Quality Assurance and Filtering</h4>
-              <p>
-                Only trajectories meeting three strict criteria were retained: (a) <em>chronological consistency</em> of screenshots,
-                (b) <em>task completeness</em> with optimal or near-optimal step sequences, and (c) <em>clear, unambiguous</em>
-                natural-language instructions. Two domain experts independently validated all annotations. Inter-annotator
-                agreement (Cohen's &kappa;) reached <strong>0.78</strong>.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
